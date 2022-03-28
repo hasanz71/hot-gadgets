@@ -1,0 +1,85 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+h5 {
+  color: darkorange;
+  cursor: pointer;
+}
+h2 {
+  font-weight: 1000px;
+}
+p {
+  color: rgb(70, 69, 69);
+}
+.container {
+  margin-bottom: 50px;
+}
+#carousel {
+  background-image: url(images/bg-2.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.carousel-item {
+  padding: 20px 40px;
+}
+.nav-item a {
+  font-weight: bold;
+}
+.buy-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 12px;
+}
+.card {
+  border: none;
+  align-items: center;
+  text-align: center;
+}
+.card img {
+  width: 80%;
+}
+
+.card-img-top {
+  padding-top: 40px;
+}
+.card-footer {
+  border: none;
+}
+.pale-order img {
+  width: 100%;
+}
+.cat1 {
+  width: 50%;
+}
+
+.cat2 {
+  width: 55%;
+  margin-top: 20px;
+}
+.cat2 img {
+  margin-bottom: 10px;
+}
+.cat3 {
+  width: 55%;
+  margin-top: 20px;
+}
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.categories h2 {
+  border-bottom: 4px solid darkorange;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+footer {
+  text-align: center;
+  color: grey;
+  margin-top: 200px;
+}

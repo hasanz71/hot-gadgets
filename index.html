@@ -5,6 +5,404 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hot Gadgets</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://static.wikia.nocookie.net/brawlstars/images/e/e9/GD-Shelly1.png/revision/latest?cb=20211028044219"
+      type="image/x-icon"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex flex-row-reverse bd-highlight"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Products</a
+                >
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#carousel">Best Seller</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#smartphone">Smartphones</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#laptop">Laptops</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section id="carousel">
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div
+                  class="col-md-5 d-flex align-items-center justify-content-center"
+                >
+                  <div>
+                    <h2>Macbook Pro</h2>
+                    <p>
+                      Our most powerful notebooks. Fast M1 processors,
+                      incredible graphics, and spectacular Retina displays. Now
+                      available in a 14-inch model.
+                    </p>
+                    <h2>$2,499</h2>
+                    <button class="buy-button">BUY NOW →</button>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <img
+                    src="images/banner-products/product-1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div
+                  class="col-md-5 d-flex align-items-center justify-content-center"
+                >
+                  <div>
+                    <h2>Sony SRS-XB10</h2>
+                    <p>
+                      Bring the beats with you when you use the Sony SRS-XB10
+                      Bluetooth Speaker in white. This speaker features Sony's
+                      EXTRA BASS technology to deliver deep, low-end tones,
+                      perfect for an impromptu dance party.
+                    </p>
+                    <h2>$75.00</h2>
+                    <button class="buy-button">BUY NOW →</button>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <img
+                    src="images/banner-products/slider-1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div
+                  class="col-md-5 d-flex align-items-center justify-content-center"
+                >
+                  <div>
+                    <h2>JBL Flip 4</h2>
+                    <p>
+                      All-Purpose Bluetooth Speaker -Take the party everywhere
+                      with Flip 4, a portable Bluetooth speaker that delivers
+                      powerful stereo sound. With durable, waterproof fabric,
+                      this speaker features up to 12 hours of continuous,
+                      high-quality audio playtime.
+                    </p>
+                    <h2>$99.00</h2>
+                    <button class="buy-button">BUY NOW →</button>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <img
+                    src="images/banner-products/slider-3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" id="smartphone">
+      <div class="d-flex justify-content-between">
+        <h2>Smartphone</h2>
+        <h5>See all</h5>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/phone/phone-1.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title">Redmi Note 9 Pro</h4>
+              <p class="card-text">
+                Xiaomi Redmi Note 9 Pro is the latest smartphone announced in
+                the month of April 2020. The smartphone is powered by the
+                Qualcomm SM7125 Snapdragon 720G Octa-core processor.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h2>$249</h2>
+              <button class="buy-button">BUY NOW →</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/phone/phone-2.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title">iPhone 11 Pro</h4>
+              <p class="card-text">
+                Apple iPhone 11 Pro is powered by the Apple A13 Bionic
+                processor. The smartphone comes with a 5.8 inches Super Retina
+                XDR OLED capacitive touchscreen and 1125 x 2436 pixels
+                resolution.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h2>$650</h2>
+              <button class="buy-button">BUY NOW →</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/phone/phone-3.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy Note 10+</h4>
+              <p class="card-text">
+                With Galaxy Note10+ we've designed a mobile experience that's
+                like a computer, a gaming console, a movie-tech camera, and an
+                intelligent pen, all in one device.Don't hesitate.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h2>$665</h2>
+              <button class="buy-button">BUY NOW →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="laptop">
+      <div class="d-flex justify-content-between">
+        <h2>Laptops</h2>
+        <h5>See all</h5>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/laptop/product-1.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title">Asus Vivobook</h4>
+              <p class="card-text">
+                The colorful, bold and youthful Vivobook series shows who you
+                really are. These fast laptops make tasks easier, with
+                innovative and thoughtful design.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h2>$1529</h2>
+              <button class="buy-button">BUY NOW →</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/laptop/product-2.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title">Razer Blade 15</h4>
+              <p class="card-text">
+                Feel the boost with an increase of 1600MHz compared to DDR4, as
+                you enjoy a quicker, smoother experience when loading
+                applications, running games, and performing other everyday PC
+                tasks.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h2>$2,299</h2>
+              <button class="buy-button">BUY NOW →</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/laptop/product-3.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title">Xiaomi Notebook Pro</h4>
+              <p class="card-text">
+                Made of 6-series aviation-grade aluminum alloy with a 170 grit
+                sandblasted texture for maximum smoothness across the chassis.Mi
+                NoteBook Pro is lean at 17.3mm and light at 1.46kg.
+              </p>
+            </div>
+
+            <div class="card-footer">
+              <h2>$1,180</h2>
+              <button class="buy-button">BUY NOW →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container categories">
+      <h2 class="d-flex justify-content-center">Categories</h2>
+      <div class="row">
+        <div class="col-md-3 vertical-align d-flex align-items-center">
+          <img src="images/Categories/bag.png" alt="" />
+
+          <p>Bag</p>
+        </div>
+        <div class="col-md-3">
+          <div class="cat2 row">
+            <div class="vertical-align">
+              <img src="images/Categories/perfume.png" alt="" />
+              <p>Perfume</p>
+            </div>
+          </div>
+          <div class="cat3 row">
+            <div class="vertical-align">
+              <img src="images/Categories/shoe.png" alt="" />
+              <p>Shoes</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pale-order">
+          <img src="images/Categories/pale-order.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>©️No rights reserved to anyone</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
